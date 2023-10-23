@@ -282,7 +282,8 @@ def main():
 
     """
     #capture
-    sniff(prn=packet_callback, count=100)
+    #sniff(prn=packet_callback, count=100)
+    pcap_file = "captured.pcap"
     packets = rdpcap(pcap_file)
 
     #filter
